@@ -15,9 +15,9 @@ export function wasm_thread_entry_point(ptr: number): void;
 export type InitInput = RequestInfo | URL | Response | BufferSource | WebAssembly.Module;
 
 export interface InitOutput {
-  readonly main: (a: number, b: number) => number;
   readonly dummy_main: () => void;
   readonly run: () => void;
+  readonly main: (a: number, b: number) => number;
   readonly wasm_thread_entry_point: (a: number) => void;
   readonly memory: WebAssembly.Memory;
   readonly __wbindgen_export_1: (a: number, b: number) => number;

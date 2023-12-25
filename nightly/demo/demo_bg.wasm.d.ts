@@ -1,8 +1,8 @@
 /* tslint:disable */
 /* eslint-disable */
-export function main(a: number, b: number): number;
 export function dummy_main(): void;
 export function run(): void;
+export function main(a: number, b: number): number;
 export function wasm_thread_entry_point(a: number): void;
 export const memory: WebAssembly.Memory;
 export function __wbindgen_export_1(a: number, b: number): number;

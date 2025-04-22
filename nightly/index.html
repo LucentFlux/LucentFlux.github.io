@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8" />
+    <title>ToyVox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="min-h-screen" id="error-dialogue">
+        <div class="flex flex-col min-h-screen justify-center content-center">
+            <div class="flex flex-row justify-center content-center">
+                <div class="md:m8 p-8 max-w-150 bg-white rounded-lg shadow-xl">
+                    <div class="icon text-center">&#9785;</div>
+                    <br>
+                    <p class="text-xl">Unsupported System</p>
+                    <p>Your current device or browser does not support this site.</p>
+                    <br>
+                    <div class="error-details" id="error-details">
+                        Your browser does not have JavaScript enabled.
+                    </div>
+                    <br>
+                    <p>Please try accessing this application from a supported device, ensure JavaScript is enabled, or
+                        update your system to the latest version.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript">document.getElementById("error-dialogue").style.display = "none";</script>
+
+    <script src="index.js" defer></script>
+</body>
+
+</html>
